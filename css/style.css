@@ -1,0 +1,12 @@
+body{
+    background-image: url(../images/Bn.webp);
+    mask-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    background-color: #fd07f05b;
+}
+a{
+    text-decoration: none;
+    color: white;
+}

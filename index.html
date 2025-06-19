@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login system</title>
+
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div
+      class="container-fluid py-5 min-vh-100 d-flex justify-content-center align-items-center text-white"
+    >
+      <div class="container w-50 mx-auto my-3 rounded-5">
+        <div class="text-center">
+          <i class="fa-regular fa-circle-user fa-5x my-3"></i>
+        </div>
+        <h1 class="text-center mb-3">Smart Login System</h1>
+
+        <div id="loginMsg" class="alert alert-danger d-none" role="alert">
+          Wrong username or password !!
+        </div>
+
+        <input
+          id="userEmail"
+          type="email"
+          placeholder="Enter your email"
+          class="form-control mt-4 p-3"
+        />
+        <div id="mailMsg" class="d-none text-danger">Invalid email</div>
+
+        <input
+          id="userPass"
+          type="password"
+          placeholder="Enter your password"
+          class="form-control mt-4 p-3"
+        />
+        <div id="passMsg" class="d-none text-danger">
+          Invalid password, password must contain (1 uppercase letter, 1
+          lowercase letter, 1 number) at least <br />
+          password must be 8-16 characters with no space
+        </div>
+
+        <button id="loginBtn" class="btn btn-dark w-100 my-3 rounded-2">
+          Login
+        </button>
+        <div class="text-center my-3">
+          <p class="lead">
+            Don’t have an account? <a href="./html/signup.html">Sign Up</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
